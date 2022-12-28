@@ -1,24 +1,21 @@
-local HWIDTable = loadstring(game:HttpGet("https://pastebin.com/raw/0tp8QssH"))()
-local Whitelist = getgenv().HWIDTable.WhitelistedIDs)
-local Blacklist = getgenv().HWIDTable.BlacklistedIDs)
+local HWIDTableWhitelist = loadstring(game:HttpGet("https://pastebin.com/raw/0tp8QssH"))()
+local HWIDTableBlacklist = loadstring(game:HttpGet("https://pastebin.com/raw/02nrGX2M"))()
 local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
 local Player = game.Players.LocalPlayer
 
 -- Made by $ melon#5256
 
 --//-- Whitelist check
-for Index, Whitelisted in pairs(Whitelist) do
-    if Whitelisted ~= HWID then
-        setclipboard(HWID)
-----//
-        else
-
----//-- Blacklist check
-for 2Index, Blacklisted in pairs(Blacklist) do
-if Blacklisted == HWID then
-Player:Kick("Your device has been blacklisted from MelonHub")
+for Index, WhitelistID in pairs(HWIDTableWhitelist) do
+    if WhitelistID == HWID then
+-- Script
 else
-print("Hardware is already whitelisted")
-    end
- end
+    setclipboard(HWID)
+end
+
+-- #Double check if hardware is blacklisted..
+
+for Index, BlacklistID in pairs(HWIDTableBlacklist) do
+    if BlacklistID == HWID then
+       Player:Kick("Device is blacklisted from MelonHub, direct message $ melon#5256 to appeal for a whitelist")
 end
