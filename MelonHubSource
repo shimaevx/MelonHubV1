@@ -12,7 +12,8 @@ for Index, Whitelisted in pairs(Whitelist) do
         setclipboard(HWID)
 ----//
         else
----//
+
+---//-- Blacklist check
 for 2Index, Blacklisted in pairs(Blacklist) do
 if Blacklisted == HWID then
 Player:Kick("Your device has been blacklisted from MelonHub")
