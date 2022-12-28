@@ -8,7 +8,9 @@ local Player = game.Players.LocalPlayer
 --//-- Whitelist check
 for Index, WhitelistID in pairs(HWIDTableWhitelist) do
     if WhitelistID == HWID then
--- Script
+
+print("MelonHubV1 coming soon...")
+
 else
     setclipboard(HWID)
 end
