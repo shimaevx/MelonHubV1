@@ -19,7 +19,6 @@ if Blacklisted == HWID then
 Player:Kick("Your device has been blacklisted from MelonHub")
 else
 print("Whitelisted")
-end
     end
  end
 end
