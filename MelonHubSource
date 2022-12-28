@@ -7,10 +7,18 @@ local Player = game.Players.LocalPlayer
 -- Made by $ melon#5256
 
 --//-- Whitelist check
-for Index, ID in pairs(Whitelist) do
-    if ID ~= HWID then
+for Index, Whitelisted in pairs(Whitelist) do
+    if Whitelisted ~= HWID then
         setclipboard(HWID)
+----//
         else
-       print("HardwareID is whitelisted")
+---//
+for 2Index, Blacklisted in pairs(Blacklist) do
+if Blacklisted == HWID then
+Player:Kick("Your device has been blacklisted from MelonHub")
+else
+print("Whitelisted")
+end
     end
  end
+end
