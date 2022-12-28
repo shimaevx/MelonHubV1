@@ -1,6 +1,6 @@
 local HWIDTable = loadstring(game:HttpGet("https://pastebin.com/raw/0tp8QssH"))()
-local Whitelist = getfenv().HWIDTable.WhitelistedIDs)
-local Blacklist = getfenv().HWIDTable.BlacklistedIDs)
+local Whitelist = getgenv().HWIDTable.WhitelistedIDs)
+local Blacklist = getgenv().HWIDTable.BlacklistedIDs)
 local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
 local Player = game.Players.LocalPlayer
 
