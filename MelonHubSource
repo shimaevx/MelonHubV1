@@ -18,7 +18,7 @@ for 2Index, Blacklisted in pairs(Blacklist) do
 if Blacklisted == HWID then
 Player:Kick("Your device has been blacklisted from MelonHub")
 else
-print("Whitelisted")
+print("Hardware is already whitelisted")
     end
  end
 end
