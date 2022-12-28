@@ -1,0 +1,11 @@
+local HWIDTable = loadstring(game:HttpGet("https://pastebin.com/raw/0tp8QssH"))()
+local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
+local Player = game.Players.LocalPlayer
+
+for Index, ID in pairs(HWIDTable) do
+    if ID ~= HWID then
+        setclipboard(HWID)
+        else
+        Player.Character:WaitForChild("Humanoid").WalkSpeed = 100
+    end
+ end
