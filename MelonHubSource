@@ -175,9 +175,9 @@ TopTextScripts.TextSize = 32
 --/// Scripts
 ----------------------------------------------
 UserInputService.InputBegan:Connect(function(Input)
-for IndexGui, Options in pairs(Options) do
+for IndexGui, OPT in pairs(Options) do
 local VisibleGui = false
-if Input.KeyCode == Options then
+if Input.KeyCode == OPT then
 if not VisibleGUi then
 VisibleGui = true
 Background.Visible = false
