@@ -138,7 +138,6 @@ coroutine.wrap(FaceImage)()
 end
 end
 end
-end
 
 for FIndex, Fenv in pairs(Options) do
 if Fenv == "Orange" then
@@ -147,4 +146,5 @@ HomeBC.BackgroundColor3 = Color3.new(209, 90, 21)
 else
 Background.BackgroundColor3 = Color3.new(38, 38, 38)
 HomeBC.BackgroundColor3 = Color3.new(38, 38, 38)
+end
 end
