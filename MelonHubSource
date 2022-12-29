@@ -173,21 +173,6 @@ TopTextScripts.TextColor3 = Color3.new(1, 1, 1)
 TopTextScripts.TextSize = 32
 -------------------------------------------
 --/// Scripts
-----------------------------------------------
---UserInputService.InputBegan:Connect(function(Input)
---for IndexGui, OPT in pairs(Options) do
---local VisibleGui = false
---if Input.KeyCode == OPT then
---if not VisibleGUi then
---VisibleGui = true
---Background.Visible = false
---else
---Background.Visible = false
---end
---end
---end
---end)
-----------------------------------------------
 Button.MouseButton1Down:Connect(function()
 HomeBC.Visible = false
 Scripts.Visible = true
