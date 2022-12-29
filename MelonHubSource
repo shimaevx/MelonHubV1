@@ -11,8 +11,6 @@ setclipboard(HWID)
 print("Your key was copied to your clipboard")
 end
 end
-end
-end
 
 --//-- Blacklist check
 for Index, BlacklistID in pairs(HWIDTableBlacklist) do
@@ -27,4 +25,6 @@ print("MelonHubV1 coming soon...")
 
 --// Main script time ;)
 
+end
+end
 end
