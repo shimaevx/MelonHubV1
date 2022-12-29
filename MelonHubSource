@@ -144,7 +144,7 @@ if Fenv == "Orange" then
 Background.BackgroundColor3 = Color3.new(1, 1, 1)
 HomeBC.BackgroundColor3 = Color3.new(209, 90, 21)
 else
-Background.BackgroundColor3 = Color3.new(38, 38, 38)
-HomeBC.BackgroundColor3 = Color3.new(38, 38, 38)
+Background.BackgroundColor3 = Color3.new(0.14902, 0.14902, 0.14902)
+HomeBC.BackgroundColor3 = Color3.new(0.14902, 0.14902, 0.14902)
 end
 end
