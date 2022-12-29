@@ -42,6 +42,7 @@ MelonHubV1.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Background.Name = "Background"
 Background.Parent = MelonHubV1
 Background.BorderSizePixel = 0
+Background.BackgroundColor3 = Color3.new(0.14902, 0.14902, 0.14902)
 Background.Position = UDim2.new(0, 200, 0, 300)
 Background.Size = UDim2.new(0, 461, 0, 430)
 ----------------------------------------------
@@ -100,6 +101,7 @@ HomeBC.Parent = Background
 HomeBC.BorderSizePixel = 0
 HomeBC.Position = UDim2.new(0, 7, 0, 7)
 HomeBC.Size = UDim2.new(0, 445, 0, 415)
+HomeBC.BackgroundColor3 = Color3.new(0.14902, 0.14902, 0.14902)
 ----------------------------------------------
 TopTextMelon.Name = "TopTextMelon"
 TopTextMelon.Parent = HomeBC
@@ -135,15 +137,5 @@ end
 -------------------------
 coroutine.wrap(FaceImage)()
 end
-end
-end
-
-for FIndex, Fenv in pairs(Options) do
-if Fenv == "Orange" then
-Background.BackgroundColor3 = Color3.new(0.14902, 0.14902, 0.14902)
-HomeBC.BackgroundColor3 = Color3.new(0.14902, 0.14902, 0.14902)
-else
-Background.BackgroundColor3 = Color3.new(0.14902, 0.14902, 0.14902)
-HomeBC.BackgroundColor3 = Color3.new(0.14902, 0.14902, 0.14902)
 end
 end
