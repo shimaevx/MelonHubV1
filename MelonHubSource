@@ -85,6 +85,7 @@ UICorner.Parent = ImageLabel
 UICorner.CornerRadius = UDim.new(2, 8)
 ----------------------------------------------
 Username.Name = "Username"
+Username.Text = Player.Name.."("..Player.DisplayName..")"
 Username.Parent = Side
 Username.BackgroundColor3 = Color3.new(1, 1, 1)
 Username.BackgroundTransparency = 1
