@@ -145,7 +145,3 @@ ImageLabel.Image = Config
 end
 -------------------------
 coroutine.wrap(FaceImage)()
-end
-end
-end
-end
