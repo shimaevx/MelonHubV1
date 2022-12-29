@@ -13,6 +13,7 @@ print("MelonHubV1 coming soon...")
 
 else
     setclipboard(HWID)
+    print("Your key was copied, ctrl v in direct messages to $ melon#5256 to get whitelisted")
 end
 
 -- #Double check if hardware is blacklisted..
