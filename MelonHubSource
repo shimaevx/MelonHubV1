@@ -126,17 +126,11 @@ Information.TextColor3 = Color3.new(1, 1, 1)
 Information.TextSize = 32
 ----------------------------------------------
 local function QRFO_fake_script()
-	local script = Instance.new('LocalScript', ImageLabel)
-
-	local plr = game:GetService("Players")
-	local loplr = plr.LocalPlayer
-	
-	
-	local type = Enum.ThumbnailType.HeadShot
-	local size = Enum.ThumbnailSize.Size420x420
-	local con = plr:GetUserThumbnailAsync(loplr.UserId, type, size)
-	
-	script.Parent.Image = con
+local type = Enum.ThumbnailType.HeadShot
+local size = Enum.ThumbnailSize.Size420x420
+local con = plr:GetUserThumbnailAsync(Player.UserId, type, size)	
+script.Parent.Image = con
+----------------------------------------------
 end
 coroutine.wrap(QRFO_fake_script)()
 end
