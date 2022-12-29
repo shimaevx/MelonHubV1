@@ -4,23 +4,25 @@ local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
 local Player = game.Players.LocalPlayer
 
 -- Made by $ melon#5256
+ --//-- Whitelist check
+ for Index, WhitelistID in pairs(HWIDTableWhitelist) do
+ if WhitelistID == HWID then
+    
 
---//-- Whitelist check
-for Index, WhitelistID in pairs(HWIDTableWhitelist) do
-    if WhitelistID == HWID then
+    
 
 print("MelonHubV1 coming soon...")
 
 else
-    setclipboard(HWID)
-    print("Your key was copied, ctrl v in direct messages to $ melon#5256 to get whitelisted")
+setclipboard(HWID)
+print("Your key was copied, ctrl v in direct messages to $ melon#5256 to get whitelisted")
 end
 
 -- #Double check if hardware is blacklisted..
 
 for Index, BlacklistID in pairs(HWIDTableBlacklist) do
-    if BlacklistID == HWID then
-       Player:Kick("Device is blacklisted from MelonHub, direct message $ melon#5256 to appeal for a whitelist")
+if BlacklistID == HWID then
+Player:Kick("Device is blacklisted from MelonHub, direct message $ melon#5256 to appeal for a whitelist")
 end
 end
 end
