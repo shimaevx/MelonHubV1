@@ -29,8 +29,8 @@ local MelonHubBackGround = Instance.new("Frame", MelonHubV1MainGui)
 ---------------------------------
 MelonHubV1MainGui.Name = "MelonHubV1"
 MelonHubBackGround.Name = "MelonHubBackground"
-MelonHubBackGround.Position = UDim2.new({0, 200},{0, 300})
-MelonHubBackGround.Size = UDim2.new({0, 200},{0, 300})
+MelonHubBackGround.Position = UDim2.new({0, 7},{0, 7})
+MelonHubBackGround.Size = UDim2.new({0, 445},{0, 415})
 MelonHubBackGround.Active = true
 MelonHubBackGround.Draggable = true
 --------------------------------
