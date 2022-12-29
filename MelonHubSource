@@ -15,6 +15,9 @@ local TopTextMelon = Instance.new("TextLabel")
 local Information = Instance.new("TextLabel")
 local Scripts = Instance.new("Frame")
 local ScriptsButton = Instance.new("TextButton")
+local TopTextScripts = Instance.new("TextLabel")
+local HarkedRebornButton = Instance.new("TextButton")
+local HarkedCoolDown = false
 
 -- Made by $ melon#5256
 
@@ -51,7 +54,7 @@ Background.Size = UDim2.new(0, 461, 0, 430)
 Scripts.Name = "Scripts"
 Scripts.Parent = Background
 Scripts.BorderSizePixel = 0
-Scripts.Position = UDim2.new(0, 7, 0, 7)
+Scripts.Position = UDim2.new(0, 7,0, 7)
 Scripts.Size = UDim2.new(0, 445, 0, 415)
 Scripts.BackgroundColor3 = Color3.new(0.14902, 0.14902, 0.14902)
 Scripts.Visible = false
@@ -96,6 +99,17 @@ ScriptsButton.TextColor3 = Color3.new(1, 1, 1)
 ScriptsButton.TextSize = 26
 ScriptsButton.TextWrapped = true
 ----------------------------------------------
+HarkedRebornButton.Name = "HarkedRebornButton"
+HarkedRebornButton.Parent = Scripts
+HarkedRebornButton.BackgroundTransparency = 1
+HarkedRebornButton.Position = UDim2.new(-0.022, 0,0.225, 0)
+HarkedRebornButton.Size = UDim2.new(0, 463,0, 50)
+HarkedRebornButton.Font = Enum.Font.Oswald
+HarkedRebornButton.Text = "HarkedV2RB(Only works in a few games)"
+HarkedRebornButton.TextColor3 = Color3.new(1, 1, 1)
+HarkedRebornButton.TextSize = 26
+HarkedRebornButton.TextWrapped = true
+----------------------------------------------
 ImageLabel.Parent = Side
 ImageLabel.BackgroundColor3 = Color3.new(1, 1, 1)
 ImageLabel.Position = UDim2.new(0, 26, 0, 53)
@@ -134,6 +148,7 @@ TopTextMelon.Font = Enum.Font.IndieFlower
 TopTextMelon.Text = "MelonHubV1"
 TopTextMelon.TextColor3 = Color3.new(1, 1, 1)
 TopTextMelon.TextSize = 32
+TopTextMelon.TextScaled = true
 ----------------------------------------------
 Information.Name = "Information"
 Information.Parent = HomeBC
@@ -146,14 +161,31 @@ Information.Text = "If theres an issue please DM $ melon#5256"
 Information.TextColor3 = Color3.new(1, 1, 1)
 Information.TextSize = 32
 ----------------------------------------------
-
+TopTextScripts.Name = "TopTextScripts"
+TopTextScripts.Parent = Scripts
+TopTextScripts.BackgroundColor3 = Color3.new(1, 1, 1)
+TopTextScripts.BackgroundTransparency = 1
+TopTextScripts.Position = UDim2.new(0.029, 0,0.0005, 0)
+TopTextScripts.Size = UDim2.new(0, 417, 0, 160)
+TopTextScripts.Font = Enum.Font.IndieFlower
+TopTextScripts.Text = "SCRIPTS"
+TopTextScripts.TextColor3 = Color3.new(1, 1, 1)
+TopTextScripts.TextSize = 32
+----------------------------------------------
 ScriptsButton.MouseButton1Down:Connect(function()
-Background.Visible = false
+HomeBC.Visible = false
 Scripts.Visible = true
 end)
-
+---/// Buttons
+HarkedRebornButton.MouseButton1Down:Connect(function()
+if not HarkedCoolDown then
+HarkedCoolDown = true
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RenseisMelons/HarkedV2/main/HarkedV2"))()
+end
+end)
+----------------------------------------------
 Home.MouseButton1Down:Connect(function()
-Background.Visible = true
+HomeBC.Visible = true
 Scripts.Visible = false
 end)
 
@@ -164,7 +196,6 @@ local ExtraPlayer = game.Players
 local Type = Enum.ThumbnailType.HeadShot
 local Size = Enum.ThumbnailSize.Size420x420
 local Config = ExtraPlayer:GetUserThumbnailAsync(Player.UserId, Type, Size)
-	
 ImageLabel.Image = Config
 end
 -------------------------
