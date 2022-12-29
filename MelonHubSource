@@ -140,8 +140,8 @@ end
 
 for FIndex, Fenv in pairs(Options) do
 if Fenv == "Orange" then
-Background.BackgroundColor3 = Color3.new(184, 111, 38)
-HomeBC.BackgroundColor3 = Color3.new(184, 111, 38)
+Background.BackgroundColor3 = Color3.new(0.14902, 0.14902, 0.14902)
+HomeBC.BackgroundColor3 = Color3.new(0.14902, 0.14902, 0.14902)
 else
 Background.BackgroundColor3 = Color3.new(0.14902, 0.14902, 0.14902)
 HomeBC.BackgroundColor3 = Color3.new(0.14902, 0.14902, 0.14902)
