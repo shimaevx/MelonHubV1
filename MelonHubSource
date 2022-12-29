@@ -16,6 +16,8 @@ for Index, WhitelistID in pairs(HWIDTableWhitelist) do
 if WhitelistID == HWID then
 print("MelonHubV1 coming soon...")
 
+--// Main script time ;)
+
 elseif WhitelistID ~= HWID then
 setclipboard(HWID)
 print("Your key was copied, ctrl v in direct messages to $ melon#5256 to get whitelisted")
