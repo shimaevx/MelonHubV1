@@ -22,6 +22,7 @@ end
 --//-- Whitelist check
 for Index, WhitelistID in pairs(HWIDTableWhitelist) do
 if WhitelistID == HWID then
+print("Execution successfull, enjoy MelonHubV1")
 ----------------------------
 local MelonHubV1 = Instance.new("ScreenGui")
 local Background = Instance.new("Frame")
