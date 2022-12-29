@@ -5,6 +5,7 @@ local Player = game.Players.LocalPlayer
 
 -- Made by $ melon#5256
 
+--// Check
 for Index, IDCheck in pairs(HWIDTableWhitelist) do
 if IDCheck ~= HWID then
 setclipboard(HWID)
