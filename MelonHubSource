@@ -29,8 +29,8 @@ local MelonHubV1MainGui = Instance.new("ScreenGui",PlayerGUI)
 local MelonHubBackGround = Instance.new("Frame", MelonHubV1MainGui)
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint", MelonHubBackGround)
 ---------------------------------
-MelonHubV1MainGui.Name = "MelonHubV1"
-MelonHubBackGround.Name = "MelonHubBackground"
+MelonHubV1MainGui.Name = 'MelonHubV1'
+MelonHubBackGround.Name = 'MelonHubBackground'
 MelonHubBackGround.Position = UDim2.new({0, 200},{0, 300})
 UIAspectRatioConstraint.AspectRatio = 1.074
 UIAspectRatioConstraint.AspectType = FitWithinMaxSize
