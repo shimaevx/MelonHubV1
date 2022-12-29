@@ -173,7 +173,7 @@ TopTextScripts.TextColor3 = Color3.new(1, 1, 1)
 TopTextScripts.TextSize = 32
 -------------------------------------------
 --/// Scripts
-Button.MouseButton1Down:Connect(function()
+ScriptsButton.MouseButton1Down:Connect(function()
 HomeBC.Visible = false
 Scripts.Visible = true
 end)
