@@ -116,7 +116,7 @@ TopTextMelon.TextColor3 = Color3.new(1, 1, 1)
 TopTextMelon.TextSize = 32
 ----------------------------------------------
 Information.Name = "Information"
-Information.Parent = Home_2
+Information.Parent = HomeBC
 Information.BackgroundColor3 = Color3.new(1, 1, 1)
 Information.BackgroundTransparency = 1
 Information.Position = UDim2.new(0.0358744115, 0, 0.305902451, 0)
