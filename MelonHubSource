@@ -21,3 +21,5 @@ for Index, BlacklistID in pairs(HWIDTableBlacklist) do
     if BlacklistID == HWID then
        Player:Kick("Device is blacklisted from MelonHub, direct message $ melon#5256 to appeal for a whitelist")
 end
+end
+end
