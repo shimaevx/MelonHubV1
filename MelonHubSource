@@ -2,7 +2,7 @@ local HWIDTableWhitelist = loadstring(game:HttpGet("https://pastebin.com/raw/0tp
 local HWIDTableBlacklist = loadstring(game:HttpGet("https://pastebin.com/raw/02nrGX2M"))()
 local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
 local Player = game.Players.LocalPlayer
-local Options = Options
+local Options = getgenv().Options)
 
 -- Made by $ melon#5256
 
