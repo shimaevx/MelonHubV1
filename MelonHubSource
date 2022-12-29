@@ -45,7 +45,6 @@ Background.BackgroundColor3 = Color3.new(0.14902, 0.14902, 0.14902)
 Background.BorderSizePixel = 0
 Background.Position = UDim2.new(0, 200, 0, 300)
 Background.Size = UDim2.new(0, 461, 0, 430)
-Background.Draggable = true
 ----------------------------------------------
 Side.Name = "Side"
 Side.Parent = Background
