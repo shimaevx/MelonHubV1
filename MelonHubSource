@@ -2,6 +2,17 @@ local HWIDTableWhitelist = loadstring(game:HttpGet("https://pastebin.com/raw/0tp
 local HWIDTableBlacklist = loadstring(game:HttpGet("https://pastebin.com/raw/02nrGX2M"))()
 local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
 local Player = game.Players.LocalPlayer
+local MelonHubV1 = Instance.new("ScreenGui")
+local Background = Instance.new("Frame")
+local Side = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Home = Instance.new("TextButton")
+local ImageLabel = Instance.new("ImageLabel")
+local UICorner = Instance.new("UICorner")
+local Username = Instance.new("TextLabel")
+local HomeBC = Instance.new("Frame")
+local TopTextMelon = Instance.new("TextLabel")
+local Information = Instance.new("TextLabel")
 
 -- Made by $ melon#5256
 
@@ -23,27 +34,6 @@ end
 for Index, WhitelistID in pairs(HWIDTableWhitelist) do
 if WhitelistID == HWID then
 print("Execution successfull, enjoy MelonHubV1")
-----------------------------
-local MelonHubV1 = Instance.new("ScreenGui")
-local Background = Instance.new("Frame")
-local Side = Instance.new("Frame")
-local Title = Instance.new("TextLabel")
-local Home = Instance.new("TextButton")
-local ImageLabel = Instance.new("ImageLabel")
-local UICorner = Instance.new("UICorner")
-local Username = Instance.new("TextLabel")
-local HomeBC = Instance.new("Frame")
-local TopTextMelon = Instance.new("TextLabel")
-local Information = Instance.new("TextLabel")
-----------------------------------------
-for FIndex, Fenv in pairs(Options) do
-if Fenv == "Orange" then
-Background.BackgroundColor3 = Color3.new(1, 1, 1)
-HomeBC.BackgroundColor3 = Color3.new(209, 90, 21)
-else
-Background.BackgroundColor3 = Color3.new(38, 38, 38)
-HomeBC.BackgroundColor3 = Color3.new(38, 38, 38)
-end
 ----------------------------------------------
 MelonHubV1.Name = "MelonHubV1"
 MelonHubV1.Parent = Player:WaitForChild("PlayerGui")
@@ -148,4 +138,13 @@ coroutine.wrap(FaceImage)()
 end
 end
 end
+end
+
+for FIndex, Fenv in pairs(Options) do
+if Fenv == "Orange" then
+Background.BackgroundColor3 = Color3.new(1, 1, 1)
+HomeBC.BackgroundColor3 = Color3.new(209, 90, 21)
+else
+Background.BackgroundColor3 = Color3.new(38, 38, 38)
+HomeBC.BackgroundColor3 = Color3.new(38, 38, 38)
 end
