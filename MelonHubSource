@@ -116,7 +116,7 @@ TopTextMelon.TextColor3 = Color3.new(1, 1, 1)
 TopTextMelon.TextSize = 32
 ----------------------------------------------
 Information.Name = "Information"
-Information.Parent = HomeBC
+Information.Parent = Home_2
 Information.BackgroundColor3 = Color3.new(1, 1, 1)
 Information.BackgroundTransparency = 1
 Information.Position = UDim2.new(0.0358744115, 0, 0.305902451, 0)
@@ -126,14 +126,14 @@ Information.Text = "If theres an issue please DM $ melon#5256"
 Information.TextColor3 = Color3.new(1, 1, 1)
 Information.TextSize = 32
 ----------------------------------------------
-local function FaceImage()
-local Image = Instance.new(ImageLabel)
-local ImageType = Enum.ThumbnailType.HeadShot
+local function FaceImage() -- ImageLabel.LocalScript 
+local FrameInstance = Instance.new('Frame', ImageLabel)
+
+local Type = Enum.ThumbnailType.HeadShot
 local Size = Enum.ThumbnailSize.Size420x420
-local Configure = Player:GetUserThumbnailAsync(Player.UserId, ImageType, Size)	
-Image.Parent = Side
-Image.Image = Configure
-----------------------------------------------
+local Config = plr:GetUserThumbnailAsync(Player.UserId, Type, Size)
+	
+FrameInstance.Parent.Image = Config
 end
 coroutine.wrap(FaceImage)()
 end
