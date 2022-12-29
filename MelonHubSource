@@ -97,15 +97,15 @@ Username.TextScaled = true
 Username.TextSize = 14
 Username.TextWrapped = true
 ----------------------------------------------
-Home_2.Name = "Home"
-Home_2.Parent = Background
-Home_2.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
-Home_2.BorderSizePixel = 0
-Home_2.Position = UDim2.new(0, 7, 0, 7)
-Home_2.Size = UDim2.new(0, 445, 0, 415)
+HomeBC.Name = "Home"
+HomeBC.Parent = Background
+HomeBC.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+HomeBC.BorderSizePixel = 0
+HomeBC.Position = UDim2.new(0, 7, 0, 7)
+HomeBC.Size = UDim2.new(0, 445, 0, 415)
 ----------------------------------------------
 TopTextMelon.Name = "TopTextMelon"
-TopTextMelon.Parent = Home_2
+TopTextMelon.Parent = HomeBC
 TopTextMelon.BackgroundColor3 = Color3.new(1, 1, 1)
 TopTextMelon.BackgroundTransparency = 1
 TopTextMelon.Position = UDim2.new(0.0358744413, 0, 0.0504807681, 0)
