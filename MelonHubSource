@@ -126,15 +126,16 @@ Information.Text = "If theres an issue please DM $ melon#5256"
 Information.TextColor3 = Color3.new(1, 1, 1)
 Information.TextSize = 32
 ----------------------------------------------
-local function FaceImage() -- ImageLabel.LocalScript 
-local FrameInstance = Instance.new('Frame', ImageLabel)
-
+local function FaceImage()
+-------////
+local ExtraPlayer = game.Players
 local Type = Enum.ThumbnailType.HeadShot
 local Size = Enum.ThumbnailSize.Size420x420
-local Config = plr:GetUserThumbnailAsync(Player.UserId, Type, Size)
+local Config = ExtraPlayer:GetUserThumbnailAsync(Player.UserId, Type, Size)
 	
-FrameInstance.Parent.Image = Config
+ImageLabel.Image = Config
 end
+-------------------------
 coroutine.wrap(FaceImage)()
 end
 end
