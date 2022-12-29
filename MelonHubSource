@@ -41,7 +41,6 @@ MelonHubV1.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ----------------------------------------------
 Background.Name = "Background"
 Background.Parent = MelonHubV1
-Background.BackgroundColor3 = Color3.new(0.14902, 0.14902, 0.14902)
 Background.BorderSizePixel = 0
 Background.Position = UDim2.new(0, 200, 0, 300)
 Background.Size = UDim2.new(0, 461, 0, 430)
