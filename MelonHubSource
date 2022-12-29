@@ -22,18 +22,123 @@ end
 --//-- Whitelist check
 for Index, WhitelistID in pairs(HWIDTableWhitelist) do
 if WhitelistID == HWID then
+----------------------------
+local MelonHubV1 = Instance.new("ScreenGui")
+local Background = Instance.new("Frame")
+local Side = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Home = Instance.new("TextButton")
+local ImageLabel = Instance.new("ImageLabel")
+local UICorner = Instance.new("UICorner")
+local Username = Instance.new("TextLabel")
+local Home_2 = Instance.new("Frame")
+local TopTextMelon = Instance.new("TextLabel")
+local Information = Instance.new("TextLabel")
+----------------------------------------------
+MelonHubV1.Name = "MelonHubV1"
+MelonHubV1.Parent = Player:WaitForChild("PlayerGui")
+MelonHubV1.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+----------------------------------------------
+Background.Name = "Background"
+Background.Parent = MelonHubV1
+Background.BackgroundColor3 = Color3.new(0.14902, 0.14902, 0.14902)
+Background.BorderSizePixel = 0
+Background.Position = UDim2.new(0, 200, 0, 300)
+Background.Size = UDim2.new(0, 461, 0, 430)
+----------------------------------------------
+Side.Name = "Side"
+Side.Parent = Background
+Side.BackgroundColor3 = Color3.new(0.129412, 0.129412, 0.129412)
+Side.BorderSizePixel = 0
+Side.Position = UDim2.new(0, -149, 0, 0)
+Side.Size = UDim2.new(0, 149, 0, 429)
+----------------------------------------------
+Title.Name = "Title"
+Title.Parent = Side
+Title.BackgroundColor3 = Color3.new(1, 1, 1)
+Title.BackgroundTransparency = 1
+Title.Position = UDim2.new(0, 0, 0.0185185149, 0)
+Title.Size = UDim2.new(0, 146, 0, 50)
+Title.Font = Enum.Font.JosefinSans
+Title.Text = "MelonHubV1"
+Title.TextColor3 = Color3.new(1, 1, 1)
+Title.TextSize = 19
+----------------------------------------------
+Home.Name = "Home"
+Home.Parent = Side
+Home.BackgroundColor3 = Color3.new(1, 1, 1)
+Home.BackgroundTransparency = 1
+Home.Position = UDim2.new(0.00671328697, 0, 0.482371777, 0)
+Home.Size = UDim2.new(0, 145, 0, 50)
+Home.Font = Enum.Font.Oswald
+Home.Text = "HOME"
+Home.TextColor3 = Color3.new(1, 1, 1)
+Home.TextSize = 26
+Home.TextWrapped = true
+----------------------------------------------
+ImageLabel.Parent = Side
+ImageLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageLabel.Position = UDim2.new(0, 26, 0, 53)
+ImageLabel.Size = UDim2.new(0, 97, 0, 98)
+----------------------------------------------
+UICorner.Parent = ImageLabel
+UICorner.CornerRadius = UDim.new(2, 8)
+----------------------------------------------
+Username.Name = "Username"
+Username.Parent = Side
+Username.BackgroundColor3 = Color3.new(1, 1, 1)
+Username.BackgroundTransparency = 1
+Username.Position = UDim2.new(0.0469930097, 0, 0.351981342, 0)
+Username.Size = UDim2.new(0, 132, 0, 50)
+Username.Font = Enum.Font.Oswald
+Username.TextColor3 = Color3.new(1, 1, 1)
+Username.TextScaled = true
+Username.TextSize = 14
+Username.TextWrapped = true
+----------------------------------------------
+Home_2.Name = "Home"
+Home_2.Parent = Background
+Home_2.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+Home_2.BorderSizePixel = 0
+Home_2.Position = UDim2.new(0, 7, 0, 7)
+Home_2.Size = UDim2.new(0, 445, 0, 415)
+----------------------------------------------
+TopTextMelon.Name = "TopTextMelon"
+TopTextMelon.Parent = Home_2
+TopTextMelon.BackgroundColor3 = Color3.new(1, 1, 1)
+TopTextMelon.BackgroundTransparency = 1
+TopTextMelon.Position = UDim2.new(0.0358744413, 0, 0.0504807681, 0)
+TopTextMelon.Size = UDim2.new(0, 417, 0, 50)
+TopTextMelon.Font = Enum.Font.IndieFlower
+TopTextMelon.Text = "MelonHubV1"
+TopTextMelon.TextColor3 = Color3.new(1, 1, 1)
+TopTextMelon.TextSize = 32
+----------------------------------------------
+Information.Name = "Information"
+Information.Parent = Home_2
+Information.BackgroundColor3 = Color3.new(1, 1, 1)
+Information.BackgroundTransparency = 1
+Information.Position = UDim2.new(0.0358744115, 0, 0.305902451, 0)
+Information.Size = UDim2.new(0, 417, 0, 160)
+Information.Font = Enum.Font.IndieFlower
+Information.Text = "If theres an issue please DM $ melon#5256"
+Information.TextColor3 = Color3.new(1, 1, 1)
+Information.TextSize = 32
+----------------------------------------------
+local function QRFO_fake_script()
+	local script = Instance.new('LocalScript', ImageLabel)
 
----------------------------------
-local MelonHubV1MainGui = Instance.new("ScreenGui",game.CoreGui)
-local MelonHubBackGround = Instance.new("Frame", MelonHubV1MainGui)
----------------------------------
-MelonHubV1MainGui.Name = "MelonHubV1"
-MelonHubBackGround.Name = "MelonHubBackground"
-MelonHubBackGround.Position = UDim2.new({0, 7},{0, 7})
-MelonHubBackGround.Size = UDim2.new({0, 445},{0, 415})
-MelonHubBackGround.Active = true
-MelonHubBackGround.Draggable = true
---------------------------------
+	local plr = game:GetService("Players")
+	local loplr = plr.LocalPlayer
+	
+	
+	local type = Enum.ThumbnailType.HeadShot
+	local size = Enum.ThumbnailSize.Size420x420
+	local con = plr:GetUserThumbnailAsync(loplr.UserId, type, size)
+	
+	script.Parent.Image = con
+end
+coroutine.wrap(QRFO_fake_script)()
 end
 end
 end
