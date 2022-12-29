@@ -5,6 +5,15 @@ local Player = game.Players.LocalPlayer
 
 -- Made by $ melon#5256
 
+for Index, IDCheck in pairs(HWIDTableWhitelist) do
+if IDCheck ~= HWID then
+setclipboard(HWID)
+print("Your key was copied to your clipboard")
+end
+end
+end
+end
+
 --//-- Blacklist check
 for Index, BlacklistID in pairs(HWIDTableBlacklist) do
 if BlacklistID == HWID then
@@ -18,9 +27,4 @@ print("MelonHubV1 coming soon...")
 
 --// Main script time ;)
 
-elseif WhitelistID ~= HWID then
-setclipboard(HWID)
-print("Your key was copied, ctrl v in direct messages to $ melon#5256 to get whitelisted")
-end
-end
 end
