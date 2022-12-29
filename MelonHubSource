@@ -31,7 +31,7 @@ local Home = Instance.new("TextButton")
 local ImageLabel = Instance.new("ImageLabel")
 local UICorner = Instance.new("UICorner")
 local Username = Instance.new("TextLabel")
-local Home_2 = Instance.new("Frame")
+local HomeBC = Instance.new("Frame")
 local TopTextMelon = Instance.new("TextLabel")
 local Information = Instance.new("TextLabel")
 ----------------------------------------------
