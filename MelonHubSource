@@ -35,6 +35,15 @@ local Username = Instance.new("TextLabel")
 local HomeBC = Instance.new("Frame")
 local TopTextMelon = Instance.new("TextLabel")
 local Information = Instance.new("TextLabel")
+----------------------------------------
+for FIndex, Fenv in pairs(Options) do
+if Fenv == "Orange" then
+Background.BackgroundColor3 = Color3.new(1, 1, 1)
+HomeBC.BackgroundColor3 = Color3.new(209, 90, 21)
+else
+Background.BackgroundColor3 = Color3.new(38, 38, 38)
+HomeBC.BackgroundColor3 = Color3.new(38, 38, 38)
+end
 ----------------------------------------------
 MelonHubV1.Name = "MelonHubV1"
 MelonHubV1.Parent = Player:WaitForChild("PlayerGui")
@@ -125,15 +134,6 @@ Information.Text = "If theres an issue please DM $ melon#5256"
 Information.TextColor3 = Color3.new(1, 1, 1)
 Information.TextSize = 32
 ----------------------------------------------
-for FIndex, Fenv in pairs(Options) do
-if Fenv == "Orange" then
-Background.BackgroundColor3 = Color3.new(1, 1, 1)
-HomeBC.BackgroundColor3 = Color3.new(209, 90, 21)
-else
-Background.BackgroundColor3 = Color3.new(38, 38, 38)
-HomeBC.BackgroundColor3 = Color3.new(38, 38, 38)
-end
-
 local function FaceImage()
 -------////
 local ExtraPlayer = game.Players
