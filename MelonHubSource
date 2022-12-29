@@ -24,8 +24,7 @@ for Index, WhitelistID in pairs(HWIDTableWhitelist) do
 if WhitelistID == HWID then
 
 ---------------------------------
-local PlayerGUI = Player.PlayerGui
-local MelonHubV1MainGui = Instance.new("ScreenGui",PlayerGUI)
+local MelonHubV1MainGui = Instance.new("ScreenGui",workspace)
 local MelonHubBackGround = Instance.new("Frame", MelonHubV1MainGui)
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint", MelonHubBackGround)
 ---------------------------------
