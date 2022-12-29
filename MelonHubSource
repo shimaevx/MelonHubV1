@@ -171,8 +171,23 @@ TopTextScripts.Font = Enum.Font.IndieFlower
 TopTextScripts.Text = "SCRIPTS"
 TopTextScripts.TextColor3 = Color3.new(1, 1, 1)
 TopTextScripts.TextSize = 32
+-------------------------------------------
+--/// Scripts
 ----------------------------------------------
-ScriptsButton.MouseButton1Down:Connect(function()
+UserInputService.InputBegan:Connect(function(Input)
+local VisibleGui = false
+if Input.KeyCode == Options then
+if not VisibleGUi then
+VisibleGui = true
+Background.Visible = false
+else
+Background.Visible = false
+print("true")
+end
+end
+end)
+----------------------------------------------
+Button.MouseButton1Down:Connect(function()
 HomeBC.Visible = false
 Scripts.Visible = true
 end)
