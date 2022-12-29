@@ -13,6 +13,8 @@ local Username = Instance.new("TextLabel")
 local HomeBC = Instance.new("Frame")
 local TopTextMelon = Instance.new("TextLabel")
 local Information = Instance.new("TextLabel")
+local Scripts = Instance.new("Frame")
+local ScriptsButton = Instance.new("TextButton")
 
 -- Made by $ melon#5256
 
@@ -46,6 +48,14 @@ Background.BackgroundColor3 = Color3.new(0.14902, 0.14902, 0.14902)
 Background.Position = UDim2.new(0, 200, 0, 300)
 Background.Size = UDim2.new(0, 461, 0, 430)
 ----------------------------------------------
+Scripts.Name = "Scripts"
+Scripts.Parent = Background
+Scripts.BorderSizePixel = 0
+Scripts.Position = UDim2.new(0, 7, 0, 7)
+Scripts.Size = UDim2.new(0, 445, 0, 415)
+Scripts.BackgroundColor3 = Color3.new(0.14902, 0.14902, 0.14902)
+Scripts.Visible = false
+----------------------------------------------
 Side.Name = "Side"
 Side.Parent = Background
 Side.BackgroundColor3 = Color3.new(0.129412, 0.129412, 0.129412)
@@ -74,6 +84,17 @@ Home.Text = "HOME"
 Home.TextColor3 = Color3.new(1, 1, 1)
 Home.TextSize = 26
 Home.TextWrapped = true
+----------------------------------------------
+ScriptsButton.Name = "ScriptsButton"
+ScriptsButton.Parent = Side
+ScriptsButton.BackgroundTransparency = 1
+ScriptsButton.Position = UDim2.new(0.007, 0,0.599, 0)
+ScriptsButton.Size = UDim2.new(0, 145, 0, 50)
+ScriptsButton.Font = Enum.Font.Oswald
+ScriptsButton.Text = "SCRIPTS"
+ScriptsButton.TextColor3 = Color3.new(1, 1, 1)
+ScriptsButton.TextSize = 26
+ScriptsButton.TextWrapped = true
 ----------------------------------------------
 ImageLabel.Parent = Side
 ImageLabel.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -125,6 +146,18 @@ Information.Text = "If theres an issue please DM $ melon#5256"
 Information.TextColor3 = Color3.new(1, 1, 1)
 Information.TextSize = 32
 ----------------------------------------------
+
+ScriptsButton.MouseButton1Down:Connect(function()
+Background.Visible = false
+Scripts.Visible = true
+end)
+
+Home.MouseButton1Down:Connect(function()
+Background.Visible = true
+Scripts.Visible = false
+end)
+
+
 local function FaceImage()
 -------////
 local ExtraPlayer = game.Players
