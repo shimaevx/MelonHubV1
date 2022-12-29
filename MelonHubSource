@@ -130,7 +130,7 @@ local function FaceImage()
 local Image = Instance.new(ImageLabel)
 local ImageType = Enum.ThumbnailType.HeadShot
 local Size = Enum.ThumbnailSize.Size420x420
-local Configure = plr:GetUserThumbnailAsync(Player.UserId, ImageType, Size)	
+local Configure = Player:GetUserThumbnailAsync(Player.UserId, ImageType, Size)	
 Image.Parent = Side
 Image.Image = Configure
 ----------------------------------------------
