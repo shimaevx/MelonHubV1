@@ -181,9 +181,9 @@ local VisibleGui = false
 if Input.KeyCode == STP then
 if not VisibleGui then
 VisibleGui = true
-Background.Visible = true
-else
 Background.Visible = false
+else
+Background.Visible = true
 VisibleGui = false
 end
 end
