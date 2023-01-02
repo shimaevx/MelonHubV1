@@ -19,6 +19,7 @@ local TopTextScripts = Instance.new("TextLabel")
 local HarkedRebornButton = Instance.new("TextButton")
 local HarkedCoolDown = false
 local UIS = game:GetService("UserInputService")
+local VisibleUI = false
 
 -- Made by $ melon#5256
 
@@ -176,15 +177,14 @@ TopTextScripts.TextSize = 32
 --/// Scripts
 ----------------------------------------------
 UIS.InputBegan:Connect(function(Input)
-for IndexGui, STP in pairs(Setup) do
-local VisibleGui = false
+for INDX, STP in pairs(Setup) do
 if Input.KeyCode == STP then
-if not VisibleGui then
-VisibleGui = true
-Background.Visible = false
-else
+if VisibleUI == false then
 Background.Visible = true
-VisibleGui = false
+VisibleUI = true
+else
+Background.Visible = false
+VisibleUI = false
 end
 end
 end
