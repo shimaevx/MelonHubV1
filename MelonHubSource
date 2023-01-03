@@ -110,7 +110,7 @@ HarkedRebornButton.TextSize = 26
 HarkedRebornButton.TextWrapped = true
 ----------------------------------------------
 ImageLabel.Parent = Side
-ImageLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageLabel.BackgroundColor3 = Color3.new(90, 90, 90)
 ImageLabel.Position = UDim2.new(0, 26, 0, 53)
 ImageLabel.Size = UDim2.new(0, 97, 0, 98)
 ----------------------------------------------
@@ -211,7 +211,6 @@ local ExtraPlayer = game.Players
 local Type = Enum.ThumbnailType.HeadShot
 local Size = Enum.ThumbnailSize.Size420x420
 local Config = ExtraPlayer:GetUserThumbnailAsync(Player.UserId, Type, Size)
-ImageLabel.BackgroundColor3 = Color3.new(90,90,90)
 ImageLabel.Image = Config
 end
 -------------------------
